@@ -2,15 +2,17 @@
 
 int main()
 {
-  int num, i = 10;
 
-  scanf("%d", &num);
+  long long int num, count = 0;
+  scanf("%lld", &num);
 
-  while (num / i > 0)
+  while (num != 0)
   {
-    printf("Hi\n");
-    i *= 10;
+    count++;
+    num /= 10;
   }
+
+  printf("%lld\n", count);
 
   return 0;
 }
